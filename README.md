@@ -1,7 +1,7 @@
 # ubuntu-ami-locator
 
 Locate "official" Ubuntu AMI from javascript or the command line.  This
-is based on the same data source as the (Amazon EC2 AMI Locator)[http://cloud-images.ubuntu.com/locator/ec2/].
+is based on the same data source as the [Amazon EC2 AMI Locator](http://cloud-images.ubuntu.com/locator/ec2/).
 Inspired by Scott Moser's [How to find the right Ubuntu AMI on EC2](http://ubuntu-smoser.blogspot.com/2011/07/how-to-find-right-ubuntu-ami-on-ec2.html)
 
 ## Install
