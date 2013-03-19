@@ -1,0 +1,23 @@
+{
+  "author": "Ken Woodruff <ken.woodruff@gmail.com>",
+  "name": "ubuntu-ami-locator",
+  "description": "locate ubuntu AMI ids (ala http://cloud-images.ubuntu.com/locator/ec2/)",
+  "keywords": ["ec2", "ami", "ubuntu"],
+  "version": "0.1.0",
+  "bin": "cli.js",
+  "repository": {
+    "url": "https://github.com/femto113/node-ubuntu-ami-locator.git"
+  },
+  "dependencies": {
+    "csv": "*",
+    "optimist": "*"
+  },
+  "devDependencies": {},
+  "optionalDependencies": {
+    "ec2-instance-data": "*"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": "*"
+  }
+}
