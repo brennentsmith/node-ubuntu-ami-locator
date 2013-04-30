@@ -6,7 +6,7 @@
   "version": "0.1.0",
   "bin": "cli.js",
   "repository": {
-    "url": "https://github.com/femto113/node-ubuntu-ami-locator.git"
+    "url": "https://github.com/snupi/node-ubuntu-ami-locator.git"
   },
   "dependencies": {
     "csv": "*",
