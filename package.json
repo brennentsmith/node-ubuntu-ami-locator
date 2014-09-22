@@ -9,7 +9,7 @@
     "url": "https://github.com/snupi/node-ubuntu-ami-locator.git"
   },
   "dependencies": {
-    "csv": "*",
+    "csv": "0.1.x",
     "optimist": "*"
   },
   "devDependencies": {},

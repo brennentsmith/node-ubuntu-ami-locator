@@ -7,7 +7,7 @@ var csv_options = {
   // NOTE: column names aren't present  in the query files so these are cribbed from
   // http://bazaar.launchpad.net/~ubuntu-on-ec2/vmbuilder/ami-finder/view/head:/gen-table.sh
   // _dummy column in place because virttype consistently preceded by two tabs
-  columns: "suite stream tag serial itype arch region ami aki _dummy virttype".split(" ") 
+  columns: "suite stream tag serial itype arch region ami aki _dummy virttype".split(" ")
 };
 
 var self = module.exports = new EventEmitter();
@@ -33,7 +33,7 @@ self.query = function (params) {
     res.on('data', function (chunk) { data += chunk; });
     res.on('end', function () {
       csv()
-        .from.string(data, csv_options)
+        .from(data, csv_options)
         .transform(function (record, index) {
           delete record._dummy;
           var match = true;

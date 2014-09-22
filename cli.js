@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-var locator = require("ubuntu-ami-locator");
+var locator = require("./index.js");
 
 var argv = require('optimist')
     .usage("Search for EC2 AMIs from Ubuntu Cloud Images (http://cloud-images.ubuntu.com/)\n\nusage: $0 --itype <itype> (--ec2 | --region <region>) [other arguments]")
@@ -61,4 +61,3 @@ if (argv.ec2) {
 } else {
   process.emit("region", argv.region);
 }
-
