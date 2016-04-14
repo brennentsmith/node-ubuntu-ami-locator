@@ -29,10 +29,14 @@ locator.query({
     tag: "release",
     arch: "amd64",
     virttype: "paravirtual"
-  }, function (error, data) {
+  }).on("end", function (data) {
       console.log(JSON.stringify(data));
+  }).on("error", function (error) {
+      console.error(error);
+      process.exit(1);
   });
 ```
+
 ```JSON
 {
   "ami":"ami-4ad94c7a",
